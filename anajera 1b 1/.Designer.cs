@@ -74,10 +74,9 @@
             // 
             this.txtDiscountpercent.Location = new System.Drawing.Point(134, 46);
             this.txtDiscountpercent.Name = "txtDiscountpercent";
-            this.txtDiscountpercent.ReadOnly = true;
             this.txtDiscountpercent.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountpercent.TabIndex = 3;
-            this.txtDiscountpercent.TabStop = false;
+            this.txtDiscountpercent.Text = "5";
             this.txtDiscountpercent.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
@@ -86,7 +85,7 @@
             this.label3.Location = new System.Drawing.Point(17, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 13);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Discount amount :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -97,7 +96,7 @@
             this.txtDiscountamount.Name = "txtDiscountamount";
             this.txtDiscountamount.ReadOnly = true;
             this.txtDiscountamount.Size = new System.Drawing.Size(100, 20);
-            this.txtDiscountamount.TabIndex = 5;
+            this.txtDiscountamount.TabIndex = 7;
             this.txtDiscountamount.TabStop = false;
             this.txtDiscountamount.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -106,7 +105,7 @@
             this.button1.Location = new System.Drawing.Point(20, 146);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 4;
             this.button1.Text = "&Calculate";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -116,7 +115,7 @@
             this.button2.Location = new System.Drawing.Point(159, 146);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 5;
             this.button2.Text = "E&xit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);

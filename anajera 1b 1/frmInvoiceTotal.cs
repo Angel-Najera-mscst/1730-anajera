@@ -44,7 +44,7 @@ namespace anajera_1b_1
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -64,8 +64,11 @@ namespace anajera_1b_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //txtTotal.Text = "10";
-            //txtTotal.ReadOnly = false;
+
+            txtDiscountamount.Text =
+                (Convert.ToDecimal(txtSubtotal.Text)
+                * Convert.ToDecimal(txtDiscountpercent.Text) / 100).ToString("0.00");
+            txtTotal.Text = (Convert.ToDecimal(txtSubtotal.Text) - Convert.ToDecimal(txtDiscountamount.Text)).ToString("0.00");
         }
 
         private void button2_Click(object sender, EventArgs e)
