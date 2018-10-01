@@ -163,6 +163,7 @@
             this.btnBhutan.Text = "Bhutanese Ngultrum";
             this.btnBhutan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBhutan.UseVisualStyleBackColor = true;
+            this.btnBhutan.Click += new System.EventHandler(this.btnBhutan_Click);
             // 
             // btnCostaRica
             // 
@@ -173,6 +174,7 @@
             this.btnCostaRica.Text = "CostaRica Colon";
             this.btnCostaRica.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCostaRica.UseVisualStyleBackColor = true;
+            this.btnCostaRica.Click += new System.EventHandler(this.btnCostaRica_Click);
             // 
             // btnEurope
             // 
@@ -183,6 +185,7 @@
             this.btnEurope.Text = "Euro";
             this.btnEurope.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEurope.UseVisualStyleBackColor = true;
+            this.btnEurope.Click += new System.EventHandler(this.btnEurope_Click);
             // 
             // FrmCurrency
             // 

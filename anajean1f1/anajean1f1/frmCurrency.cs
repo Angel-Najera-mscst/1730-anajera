@@ -19,15 +19,42 @@ namespace anajean1f1
 
         private void FrmCurrency_Load(object sender, EventArgs e)
         {
-            btnAustralia.BackgroundImage = picAustralia.Image;
-            btnBhutan.BackgroundImage = picBhutan.Image;
-            btnCostaRica.BackgroundImage = picCostaRica.Image;
-            btnEurope.BackgroundImage = picEurope.Image;
+            btnAustralia.BackgroundImage = picAustraliaDim.Image;
+            btnBhutan.BackgroundImage = picBhutanDim.Image;
+            btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+            btnEurope.BackgroundImage = picEuropeDim.Image;
         }
 
         private void btnAustralia_Click(object sender, EventArgs e)
         {
+            btnAustralia.BackgroundImage = picAustralia.Image;
+            btnBhutan.BackgroundImage = picBhutanDim.Image;
+            btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+            btnEurope.BackgroundImage = picEuropeDim.Image;
+        }
+
+        private void btnBhutan_Click(object sender, EventArgs e)
+        {
+            btnBhutan.BackgroundImage = picBhutan.Image;
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
+            btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+            btnEurope.BackgroundImage = picEuropeDim.Image;
+        }
+
+        private void btnCostaRica_Click(object sender, EventArgs e)
+        {
+            btnCostaRica.BackgroundImage = picCostaRica.Image;
+            btnAustralia.BackgroundImage = picAustraliaDim.Image;
+            btnBhutan.BackgroundImage = picBhutanDim.Image;
+            btnEurope.BackgroundImage = picEuropeDim.Image;
+        }
+
+        private void btnEurope_Click(object sender, EventArgs e)
+        {
+            btnEurope.BackgroundImage = picEurope.Image;
+            btnAustralia.BackgroundImage = picAustraliaDim.Image;
+            btnBhutan.BackgroundImage = picBhutanDim.Image;
+            btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
         }
     }
 }
