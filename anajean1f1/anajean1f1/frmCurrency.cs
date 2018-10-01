@@ -23,6 +23,11 @@ namespace anajean1f1
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
             btnEurope.BackgroundImage = picEuropeDim.Image;
+            txtRate.Text = "0.717976";
+            lblCurrency.Text = btnAustralia.Text + ": ";
+            txtUSDollars.Text = "0.00";
+            txtTotalUSD.Text = "0.00";
+            txtCurrency.Focus();
         }
 
         private void btnAustralia_Click(object sender, EventArgs e)
@@ -55,6 +60,28 @@ namespace anajean1f1
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+        }
+
+        private void calcUSD(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCurrency_Enter(object sender, EventArgs e)
+        {
+            txtCurrency.SelectAll();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            (Convert.ToDecimal(txtUSDollars) + Convert.ToDecimal(txtTotalUSD)).ToString("0.00");
+            lblEquation.Text = lblEquation.Text + "+" + txtTotalUSD.Text;
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
