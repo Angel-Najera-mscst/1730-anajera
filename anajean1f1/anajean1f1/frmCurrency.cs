@@ -20,6 +20,14 @@ namespace anajean1f1
         private void FrmCurrency_Load(object sender, EventArgs e)
         {
             btnAustralia.BackgroundImage = picAustralia.Image;
+            btnBhutan.BackgroundImage = picBhutan.Image;
+            btnCostaRica.BackgroundImage = picCostaRica.Image;
+            btnEurope.BackgroundImage = picEurope.Image;
+        }
+
+        private void btnAustralia_Click(object sender, EventArgs e)
+        {
+            btnAustralia.BackgroundImage = picAustraliaDim.Image;
         }
     }
 }

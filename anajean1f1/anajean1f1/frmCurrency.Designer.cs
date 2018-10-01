@@ -39,6 +39,9 @@
             this.picBhutanDim = new System.Windows.Forms.PictureBox();
             this.picEurope = new System.Windows.Forms.PictureBox();
             this.picEuropeDim = new System.Windows.Forms.PictureBox();
+            this.btnBhutan = new System.Windows.Forms.Button();
+            this.btnCostaRica = new System.Windows.Forms.Button();
+            this.btnEurope = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picAustralia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAustraliaDim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBhutan)).BeginInit();
@@ -59,11 +62,12 @@
             this.btnAustralia.Text = "Australian Dollar";
             this.btnAustralia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAustralia.UseVisualStyleBackColor = true;
+            this.btnAustralia.Click += new System.EventHandler(this.btnAustralia_Click);
             // 
             // picAustralia
             // 
             this.picAustralia.Image = ((System.Drawing.Image)(resources.GetObject("picAustralia.Image")));
-            this.picAustralia.Location = new System.Drawing.Point(12, 437);
+            this.picAustralia.Location = new System.Drawing.Point(12, 413);
             this.picAustralia.Name = "picAustralia";
             this.picAustralia.Size = new System.Drawing.Size(91, 79);
             this.picAustralia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,7 +77,7 @@
             // picAustraliaDim
             // 
             this.picAustraliaDim.Image = ((System.Drawing.Image)(resources.GetObject("picAustraliaDim.Image")));
-            this.picAustraliaDim.Location = new System.Drawing.Point(109, 437);
+            this.picAustraliaDim.Location = new System.Drawing.Point(109, 413);
             this.picAustraliaDim.Name = "picAustraliaDim";
             this.picAustraliaDim.Size = new System.Drawing.Size(91, 79);
             this.picAustraliaDim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,7 +87,7 @@
             // picBhutan
             // 
             this.picBhutan.Image = ((System.Drawing.Image)(resources.GetObject("picBhutan.Image")));
-            this.picBhutan.Location = new System.Drawing.Point(206, 437);
+            this.picBhutan.Location = new System.Drawing.Point(206, 413);
             this.picBhutan.Name = "picBhutan";
             this.picBhutan.Size = new System.Drawing.Size(91, 79);
             this.picBhutan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +97,7 @@
             // picCostaRicaDim
             // 
             this.picCostaRicaDim.Image = ((System.Drawing.Image)(resources.GetObject("picCostaRicaDim.Image")));
-            this.picCostaRicaDim.Location = new System.Drawing.Point(497, 437);
+            this.picCostaRicaDim.Location = new System.Drawing.Point(497, 413);
             this.picCostaRicaDim.Name = "picCostaRicaDim";
             this.picCostaRicaDim.Size = new System.Drawing.Size(91, 79);
             this.picCostaRicaDim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +107,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(303, 437);
+            this.pictureBox5.Location = new System.Drawing.Point(303, 413);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(91, 79);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +117,7 @@
             // picCostaRica
             // 
             this.picCostaRica.Image = ((System.Drawing.Image)(resources.GetObject("picCostaRica.Image")));
-            this.picCostaRica.Location = new System.Drawing.Point(400, 437);
+            this.picCostaRica.Location = new System.Drawing.Point(400, 413);
             this.picCostaRica.Name = "picCostaRica";
             this.picCostaRica.Size = new System.Drawing.Size(91, 79);
             this.picCostaRica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +127,7 @@
             // picBhutanDim
             // 
             this.picBhutanDim.Image = ((System.Drawing.Image)(resources.GetObject("picBhutanDim.Image")));
-            this.picBhutanDim.Location = new System.Drawing.Point(303, 437);
+            this.picBhutanDim.Location = new System.Drawing.Point(303, 413);
             this.picBhutanDim.Name = "picBhutanDim";
             this.picBhutanDim.Size = new System.Drawing.Size(91, 79);
             this.picBhutanDim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +137,7 @@
             // picEurope
             // 
             this.picEurope.Image = ((System.Drawing.Image)(resources.GetObject("picEurope.Image")));
-            this.picEurope.Location = new System.Drawing.Point(594, 437);
+            this.picEurope.Location = new System.Drawing.Point(594, 413);
             this.picEurope.Name = "picEurope";
             this.picEurope.Size = new System.Drawing.Size(91, 79);
             this.picEurope.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,18 +147,51 @@
             // picEuropeDim
             // 
             this.picEuropeDim.Image = ((System.Drawing.Image)(resources.GetObject("picEuropeDim.Image")));
-            this.picEuropeDim.Location = new System.Drawing.Point(691, 437);
+            this.picEuropeDim.Location = new System.Drawing.Point(691, 413);
             this.picEuropeDim.Name = "picEuropeDim";
             this.picEuropeDim.Size = new System.Drawing.Size(91, 79);
             this.picEuropeDim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEuropeDim.TabIndex = 6;
             this.picEuropeDim.TabStop = false;
             // 
+            // btnBhutan
+            // 
+            this.btnBhutan.Location = new System.Drawing.Point(145, 12);
+            this.btnBhutan.Name = "btnBhutan";
+            this.btnBhutan.Size = new System.Drawing.Size(127, 86);
+            this.btnBhutan.TabIndex = 7;
+            this.btnBhutan.Text = "Bhutanese Ngultrum";
+            this.btnBhutan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBhutan.UseVisualStyleBackColor = true;
+            // 
+            // btnCostaRica
+            // 
+            this.btnCostaRica.Location = new System.Drawing.Point(278, 12);
+            this.btnCostaRica.Name = "btnCostaRica";
+            this.btnCostaRica.Size = new System.Drawing.Size(127, 86);
+            this.btnCostaRica.TabIndex = 8;
+            this.btnCostaRica.Text = "CostaRica Colon";
+            this.btnCostaRica.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCostaRica.UseVisualStyleBackColor = true;
+            // 
+            // btnEurope
+            // 
+            this.btnEurope.Location = new System.Drawing.Point(411, 12);
+            this.btnEurope.Name = "btnEurope";
+            this.btnEurope.Size = new System.Drawing.Size(127, 86);
+            this.btnEurope.TabIndex = 9;
+            this.btnEurope.Text = "Euro";
+            this.btnEurope.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEurope.UseVisualStyleBackColor = true;
+            // 
             // FrmCurrency
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 528);
+            this.ClientSize = new System.Drawing.Size(793, 539);
+            this.Controls.Add(this.btnEurope);
+            this.Controls.Add(this.btnCostaRica);
+            this.Controls.Add(this.btnBhutan);
             this.Controls.Add(this.picEurope);
             this.Controls.Add(this.picEuropeDim);
             this.Controls.Add(this.picBhutanDim);
@@ -166,6 +203,7 @@
             this.Controls.Add(this.picAustralia);
             this.Controls.Add(this.btnAustralia);
             this.Name = "FrmCurrency";
+            this.Text = " Form1";
             this.Load += new System.EventHandler(this.FrmCurrency_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAustralia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAustraliaDim)).EndInit();
@@ -192,6 +230,9 @@
         private System.Windows.Forms.PictureBox picBhutanDim;
         private System.Windows.Forms.PictureBox picEurope;
         private System.Windows.Forms.PictureBox picEuropeDim;
+        private System.Windows.Forms.Button btnBhutan;
+        private System.Windows.Forms.Button btnCostaRica;
+        private System.Windows.Forms.Button btnEurope;
     }
 }
 
