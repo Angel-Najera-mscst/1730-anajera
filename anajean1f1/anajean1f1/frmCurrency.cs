@@ -16,10 +16,9 @@ namespace anajean1f1
         {
             InitializeComponent();
         }
-
         private void FrmCurrency_Load(object sender, EventArgs e)
         {
-            btnAustralia.BackgroundImage = picAustraliaDim.Image;
+            btnAustralia.BackgroundImage = picAustralia.Image;
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
             btnEurope.BackgroundImage = picEuropeDim.Image;
@@ -36,6 +35,9 @@ namespace anajean1f1
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
             btnEurope.BackgroundImage = picEuropeDim.Image;
+            lblCurrency.Text = btnAustralia.Text + ": ";
+            txtRate.Text = "0.717976";
+            txtCurrency.Focus();
         }
 
         private void btnBhutan_Click(object sender, EventArgs e)
@@ -44,6 +46,9 @@ namespace anajean1f1
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
             btnEurope.BackgroundImage = picEuropeDim.Image;
+            lblCurrency.Text = btnBhutan.Text + ": ";
+            txtRate.Text = "0.0139831";
+            txtCurrency.Focus();
         }
 
         private void btnCostaRica_Click(object sender, EventArgs e)
@@ -52,6 +57,9 @@ namespace anajean1f1
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnEurope.BackgroundImage = picEuropeDim.Image;
+            lblCurrency.Text = btnCostaRica.Text + ": ";
+            txtRate.Text = "0.0017";
+            txtCurrency.Focus();
         }
 
         private void btnEurope_Click(object sender, EventArgs e)
@@ -60,11 +68,16 @@ namespace anajean1f1
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+            lblCurrency.Text = btnEurope.Text + ": ";
+            txtRate.Text = "1.15";
+            txtCurrency.Focus();
         }
 
         private void calcUSD(object sender, EventArgs e)
         {
-
+            txtUSDollars.Text = (
+              Convert.ToDecimal(txtCurrency.Text) * Convert.ToDecimal(txtRate.Text)
+                ).ToString("0.00");
         }
 
         private void txtCurrency_Enter(object sender, EventArgs e)
@@ -74,7 +87,9 @@ namespace anajean1f1
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            (Convert.ToDecimal(txtUSDollars) + Convert.ToDecimal(txtTotalUSD)).ToString("0.00");
+            txtTotalUSD.Text = (
+                Convert.ToDecimal(txtUSDollars.Text) + Convert.ToDecimal(txtTotalUSD.Text)
+                ).ToString("0.00");
             lblEquation.Text = lblEquation.Text + "+" + txtTotalUSD.Text;
 
         }
@@ -82,6 +97,19 @@ namespace anajean1f1
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            btnAustralia.BackgroundImage = picAustralia.Image;
+            btnBhutan.BackgroundImage = picBhutanDim.Image;
+            btnCostaRica.BackgroundImage = picCostaRicaDim.Image;
+            btnEurope.BackgroundImage = picEuropeDim.Image;
+            txtRate.Text = "0.717976";
+            lblCurrency.Text = btnAustralia.Text + ": ";
+            txtUSDollars.Text = "0.00";
+            txtTotalUSD.Text = "0.00";
+            txtCurrency.Focus();
         }
     }
 }

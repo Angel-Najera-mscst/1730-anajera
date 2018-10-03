@@ -279,6 +279,7 @@
             this.btnReset.TabIndex = 27;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
             // 
@@ -340,6 +341,7 @@
             this.Controls.Add(this.btnAustralia);
             this.Name = "FrmCurrency";
             this.Text = " Form1";
+            this.Load += new System.EventHandler(this.FrmCurrency_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAustralia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAustraliaDim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBhutan)).EndInit();
