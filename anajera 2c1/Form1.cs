@@ -66,67 +66,67 @@ namespace anajera_2c1
                 byte1 = Convert.ToByte(input1TextBox.Text);
                 byte1TextBox.Text = byte1.ToString();
             }
-            catch (Exception) { byte1TextBox.Text = "error"; }
+            catch (Exception) { byte1TextBox.Text = "error"; byte1 = 0; }
             try
             {
                 sbyte1 = Convert.ToSByte(input1TextBox.Text);
                 sbyte1TextBox.Text = sbyte1.ToString();
             }
-            catch (Exception) { sbyte1TextBox.Text = "error"; }
+            catch (Exception) { sbyte1TextBox.Text = "error"; sbyte1 = 0; }
             try
             {
                 short1 = Convert.ToInt16(input1TextBox.Text);
                 short1TextBox.Text = short1.ToString();
             }
-            catch (Exception) { short1TextBox.Text = "error"; }
+            catch (Exception) { short1TextBox.Text = "error"; short1 = 0; }
             try
             {
                 ushort1 = Convert.ToUInt16(input1TextBox.Text);
                 ushort1TextBox.Text = ushort1.ToString();
             }
-            catch (Exception) { ushort1TextBox.Text = "error"; }
+            catch (Exception) { ushort1TextBox.Text = "error"; ushort1 = 0; }
             try
             {
                 int1 = Convert.ToInt32(input1TextBox.Text);
                 int1TextBox.Text = int1.ToString();
             }
-            catch (Exception) { int1TextBox.Text = "error"; }
+            catch (Exception) { int1TextBox.Text = "error"; int1 = 0; }
             try
             {
                 uint1 = Convert.ToUInt32(input1TextBox.Text);
                 uint1TextBox.Text = uint1.ToString();
             }
-            catch (Exception) { uint1TextBox.Text = "error"; }
+            catch (Exception) { uint1TextBox.Text = "error"; uint1 = 0; }
             try
             {
                 long1 = Convert.ToInt64(input1TextBox.Text);
                 long1TextBox.Text = long1.ToString();
             }
-            catch (Exception) { long1TextBox.Text = "error"; }
+            catch (Exception) { long1TextBox.Text = "error"; long1 = 0; }
             try
             {
                 ulong1 = Convert.ToUInt64(input1TextBox.Text);
                 ulong1TextBox.Text = ulong1.ToString();
             }
-            catch (Exception) { ulong1TextBox.Text = "error"; }
+            catch (Exception) { ulong1TextBox.Text = "error"; ulong1 = 0; }
             try
             {
                 float1 = Convert.ToSingle(input1TextBox.Text);
                 float1TextBox.Text = float1.ToString();
             }
-            catch (Exception) { float1TextBox.Text = "error"; }
+            catch (Exception) { float1TextBox.Text = "error"; float1 = 0.0f; }
             try
             {
                 double1 = Convert.ToDouble(input1TextBox.Text);
                 double1TextBox.Text = double1.ToString();
             }
-            catch (Exception) { double1TextBox.Text = "error"; }
+            catch (Exception) { double1TextBox.Text = "error"; double1 = 0.0; }
             try
             {
                 decimal1 = Convert.ToDecimal(input1TextBox.Text);
                 decimal1TextBox.Text = decimal1.ToString();
             }
-            catch (Exception) { decimal1TextBox.Text = "error"; }
+            catch (Exception) { decimal1TextBox.Text = "error"; decimal1 = 0m; }
         }
         private void Input2TextBox_TextChanged(object sender, EventArgs e)
         {
@@ -135,67 +135,152 @@ namespace anajera_2c1
                 byte2 = Convert.ToByte(input2TextBox.Text);
                 byte2TextBox.Text = byte2.ToString();
             }
-            catch (Exception) { byte2TextBox.Text = "error"; }
+            catch (Exception) { byte2TextBox.Text = "error"; byte2 = 0; }
             try
             {
                 sbyte2 = Convert.ToSByte(input2TextBox.Text);
                 sbyte2TextBox.Text = sbyte2.ToString();
             }
-            catch (Exception) { sbyte2TextBox.Text = "error"; }
+            catch (Exception) { sbyte2TextBox.Text = "error"; sbyte2 = 0; }
             try
             {
                 short2 = Convert.ToInt16(input2TextBox.Text);
                 short2TextBox.Text = short2.ToString();
             }
-            catch (Exception) { short2TextBox.Text = "error"; }
+            catch (Exception) { short2TextBox.Text = "error"; short2 = 0; }
             try
             {
                 ushort2 = Convert.ToUInt16(input2TextBox.Text);
                 ushort2TextBox.Text = ushort2.ToString();
             }
-            catch (Exception) { ushort2TextBox.Text = "error"; }
+            catch (Exception) { ushort2TextBox.Text = "error"; ushort2 = 0; }
             try
             {
                 int2 = Convert.ToInt32(input2TextBox.Text);
                 int2TextBox.Text = int2.ToString();
             }
-            catch (Exception) { int2TextBox.Text = "error"; }
+            catch (Exception) { int2TextBox.Text = "error"; int2 = 0; }
             try
             {
                 uint2 = Convert.ToUInt32(input2TextBox.Text);
                 uint2TextBox.Text = uint2.ToString();
             }
-            catch (Exception) { uint2TextBox.Text = "error"; }
+            catch (Exception) { uint2TextBox.Text = "error"; uint2 = 0; }
             try
             {
                 long2 = Convert.ToInt64(input2TextBox.Text);
                 long2TextBox.Text = long2.ToString();
             }
-            catch (Exception) { long2TextBox.Text = "error"; }
+            catch (Exception) { long2TextBox.Text = "error"; long2 = 0; }
             try
             {
                 ulong2 = Convert.ToUInt64(input2TextBox.Text);
                 ulong2TextBox.Text = ulong2.ToString();
             }
-            catch (Exception) { ulong2TextBox.Text = "error"; }
+            catch (Exception) { ulong2TextBox.Text = "error"; ulong2 = 0; }
             try
             {
                 float2 = Convert.ToSingle(input2TextBox.Text);
                 float2TextBox.Text = float2.ToString();
             }
-            catch (Exception) { float2TextBox.Text = "error"; }
+            catch (Exception) { float2TextBox.Text = "error"; float2 = 0.0f; }
             try
             {
                 double2 = Convert.ToDouble(input2TextBox.Text);
                 double2TextBox.Text = double2.ToString();
             }
-            catch (Exception) { double2TextBox.Text = "error"; }
+            catch (Exception) { double2TextBox.Text = "error"; double2 = 0.0; }
             try
             {
                 decimal2 = Convert.ToDecimal(input2TextBox.Text);
                 decimal2TextBox.Text = decimal2.ToString();
             }
-            catch (Exception) { decimal2TextBox.Text = "error"; }
+            catch (Exception) { decimal2TextBox.Text = "error"; decimal2 = 0m; }
+        }
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.byte3 = Convert.ToByte(this.byte1 + this.byte2);
+                byte3TextBox.Text = byte3.ToString();
+            }
+            catch (Exception) { byte3TextBox.Text = "error"; }
+
+            try
+            {
+                this.sbyte3 = Convert.ToSByte(this.sbyte1 + this.sbyte2);
+                sbyte3TextBox.Text = sbyte3.ToString();
+            }
+            catch (Exception) { sbyte3TextBox.Text = "error"; }
+
+            try
+            {
+                this.short3 = Convert.ToInt16(this.short1 + this.short2);
+                short3TextBox.Text = short3.ToString();
+            }
+            catch (Exception) { short3TextBox.Text = "error"; }
+
+            try
+            {
+                this.ushort3 = Convert.ToUInt16(this.ushort1 + this.ushort2);
+                ushort3TextBox.Text = ushort3.ToString();
+            }
+            catch (Exception) { ushort3TextBox.Text = "error"; }
+
+            try
+            {
+                this.int3 = this.int1 + this.int2;
+                int3TextBox.Text = int3.ToString();
+            }
+            catch (Exception) { int3TextBox.Text = "error"; }
+
+            try
+            {
+                this.int3 = checked(this.int1 + this.int2);
+                int3TextBox.Text = int3.ToString();
+            }
+            catch (Exception) { int3TextBox.Text = "error"; }
+
+            try
+            {
+                this.uint3 = checked(this.uint1 + this.uint2);
+                uint3TextBox.Text = uint3.ToString();
+            }
+            catch (Exception) { uint3TextBox.Text = "error"; }
+
+            try
+            {
+                this.long3 = Convert.ToInt64(this.long1 + this.long2);
+                long3TextBox.Text = long3.ToString();
+            }
+            catch (Exception) { long3TextBox.Text = "error"; }
+            try
+            {
+                this.ulong3 = Convert.ToUInt64(this.ulong1 + this.ulong2);
+                ulong3TextBox.Text = ulong3.ToString();
+            }
+            catch (Exception) { ulong3TextBox.Text = "error"; }
+
+            try
+            {
+                this.float3 = Convert.ToSingle (this.float1 + this.float2);
+                float3TextBox.Text = float3.ToString();
+            }
+            catch (Exception) { float3TextBox.Text = "error"; }
+
+            try
+            {
+                this.double3 = Convert.ToDouble(this.double1 + this.double2);
+                double3TextBox.Text = double3.ToString();
+            }
+            catch (Exception) { double3TextBox.Text = "error"; }
+
+            try
+            {
+                this.decimal3 = Convert.ToDecimal(this.decimal1 + this.decimal2);
+                decimal3TextBox.Text = decimal3.ToString();
+            }
+            catch (Exception) { decimal3TextBox.Text = "error"; }
         }
     }
 }
