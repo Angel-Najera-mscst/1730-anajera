@@ -76,6 +76,11 @@
             this.decimal1TextBox = new System.Windows.Forms.TextBox();
             this.setMinButton = new System.Windows.Forms.Button();
             this.setMaxButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.subtractButton = new System.Windows.Forms.Button();
+            this.MultiplyButton = new System.Windows.Forms.Button();
+            this.divideButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // input1TextBox
@@ -86,6 +91,7 @@
             this.input1TextBox.TabIndex = 0;
             this.input1TextBox.Text = "0";
             this.input1TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.input1TextBox.TextChanged += new System.EventHandler(this.input1TextBox_TextChanged);
             // 
             // input2TextBox
             // 
@@ -95,6 +101,7 @@
             this.input2TextBox.TabIndex = 1;
             this.input2TextBox.Text = "0";
             this.input2TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.input2TextBox.TextChanged += new System.EventHandler(this.Input2TextBox_TextChanged);
             // 
             // byte1TextBox
             // 
@@ -578,11 +585,61 @@
             this.setMaxButton.UseVisualStyleBackColor = true;
             this.setMaxButton.Click += new System.EventHandler(this.SetMaxButton_Click);
             // 
+            // addButton
+            // 
+            this.addButton.Location = new System.Drawing.Point(517, 61);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(24, 23);
+            this.addButton.TabIndex = 48;
+            this.addButton.Text = "+";
+            this.addButton.UseVisualStyleBackColor = true;
+            // 
+            // subtractButton
+            // 
+            this.subtractButton.Location = new System.Drawing.Point(547, 61);
+            this.subtractButton.Name = "subtractButton";
+            this.subtractButton.Size = new System.Drawing.Size(24, 23);
+            this.subtractButton.TabIndex = 49;
+            this.subtractButton.Text = "-";
+            this.subtractButton.UseVisualStyleBackColor = true;
+            // 
+            // MultiplyButton
+            // 
+            this.MultiplyButton.Location = new System.Drawing.Point(577, 61);
+            this.MultiplyButton.Name = "MultiplyButton";
+            this.MultiplyButton.Size = new System.Drawing.Size(24, 23);
+            this.MultiplyButton.TabIndex = 50;
+            this.MultiplyButton.Text = "*";
+            this.MultiplyButton.UseVisualStyleBackColor = true;
+            // 
+            // divideButton
+            // 
+            this.divideButton.Location = new System.Drawing.Point(607, 61);
+            this.divideButton.Name = "divideButton";
+            this.divideButton.Size = new System.Drawing.Size(24, 23);
+            this.divideButton.TabIndex = 51;
+            this.divideButton.Text = "/";
+            this.divideButton.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(555, 45);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Result";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.divideButton);
+            this.Controls.Add(this.MultiplyButton);
+            this.Controls.Add(this.subtractButton);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.setMaxButton);
             this.Controls.Add(this.setMinButton);
             this.Controls.Add(this.label11);
@@ -688,6 +745,11 @@
         private System.Windows.Forms.TextBox decimal1TextBox;
         private System.Windows.Forms.Button setMinButton;
         private System.Windows.Forms.Button setMaxButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button subtractButton;
+        private System.Windows.Forms.Button MultiplyButton;
+        private System.Windows.Forms.Button divideButton;
+        private System.Windows.Forms.Label label12;
     }
 }
 
