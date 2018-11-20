@@ -38,6 +38,8 @@
             this.calcButton = new System.Windows.Forms.Button();
             this.resultif01TextBox = new System.Windows.Forms.TextBox();
             this.resultelseif01TextBox = new System.Windows.Forms.TextBox();
+            this.resultNestedifElse01TextBox = new System.Windows.Forms.TextBox();
+            this.resultSwitchDefault01TextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // input1aTextBox
@@ -127,11 +129,29 @@
             this.resultelseif01TextBox.Size = new System.Drawing.Size(58, 20);
             this.resultelseif01TextBox.TabIndex = 9;
             // 
+            // resultNestedifElse01TextBox
+            // 
+            this.resultNestedifElse01TextBox.Location = new System.Drawing.Point(285, 124);
+            this.resultNestedifElse01TextBox.Name = "resultNestedifElse01TextBox";
+            this.resultNestedifElse01TextBox.ReadOnly = true;
+            this.resultNestedifElse01TextBox.Size = new System.Drawing.Size(58, 20);
+            this.resultNestedifElse01TextBox.TabIndex = 10;
+            // 
+            // resultSwitchDefault01TextBox
+            // 
+            this.resultSwitchDefault01TextBox.Location = new System.Drawing.Point(285, 174);
+            this.resultSwitchDefault01TextBox.Name = "resultSwitchDefault01TextBox";
+            this.resultSwitchDefault01TextBox.ReadOnly = true;
+            this.resultSwitchDefault01TextBox.Size = new System.Drawing.Size(58, 20);
+            this.resultSwitchDefault01TextBox.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 292);
+            this.Controls.Add(this.resultSwitchDefault01TextBox);
+            this.Controls.Add(this.resultNestedifElse01TextBox);
             this.Controls.Add(this.resultelseif01TextBox);
             this.Controls.Add(this.resultif01TextBox);
             this.Controls.Add(this.calcButton);
@@ -161,6 +181,8 @@
         private System.Windows.Forms.Button calcButton;
         private System.Windows.Forms.TextBox resultif01TextBox;
         private System.Windows.Forms.TextBox resultelseif01TextBox;
+        private System.Windows.Forms.TextBox resultNestedifElse01TextBox;
+        private System.Windows.Forms.TextBox resultSwitchDefault01TextBox;
     }
 }
 

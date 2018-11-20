@@ -45,5 +45,41 @@ namespace anajera2g2
                 discountpercent = .2m;
             return discountpercent.ToString("0.0");
         }
-    }
+        public static string NestedIfElse01(string customerType)
+        {
+            // 1d) nested if-else
+            decimal discountpercent = .1m;
+
+            if (customerType == "R")
+            {
+                discountpercent = .1m;
+            }
+            else
+            {
+                if (customerType == "C")
+                {
+                    discountpercent = .2m;
+                }
+            }
+
+            return discountpercent.ToString("0.0");
+        }
+        public static string SwichDefault01(string customerType)
+        {
+            //1e) 'Switch' with defult
+            decimal discountPercent = -1m;
+
+            switch (customerType)
+            {
+                case "R";
+                    discountPercent = .1m;
+                    break;
+                case "C";
+                    discountPercent = .2m;
+                    break;
+                default: discountPercent = .1m;
+                    break;
+            }
+            return discountPercent.ToString("0.0");
+    }   }
 }
