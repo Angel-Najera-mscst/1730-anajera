@@ -29,6 +29,18 @@ namespace anajera3a1
         {
             ResultTextBox0.Text = Ex3aLoops.Calc0(
                 inputTextBox0a.Text, inputTextBox0b.Text, inputTextBox0c.Text);
+            ResultTextBox1.Text = Ex3aLoops.Calc1(
+                inputTextBox1a.Text, inputTextBox1b.Text, inputTextBox1c.Text);
+            ResultTextBox2.Text = Ex3aLoops.Calc2(
+                inputTextBox2a.Text, inputTextBox2b.Text, inputTextBox2c.Text);
+            ResultTextBox3.Text = Ex3aLoops.Calc3(
+               inputTextBox3a.Text, inputTextBox3b.Text, inputTextBox3c.Text);
+            ResultTextBox4.Text = Ex3aLoops.Calc4(
+                inputTextBox4a.Text, inputTextBox4b.Text, inputTextBox4c.Text);
+            ResultTextBox5.Text = Ex3aLoops.Calc5(
+                inputTextBox5a.Text, inputTextBox5b.Text, inputTextBox5c.Text);
         }
+
+        
     }
 }
